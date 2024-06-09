@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    main {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .footer {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .productos {
+        display: flex; /* Agregado para asegurar el uso de flexbox */
+        flex-direction: column;
+        font-size: 16px;
+        padding-bottom: 2rem;
+    }
+
+    .cards {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .formulario form {
+        width: 100%;
+        position: static; /* Posición estática para asegurar que no sea absoluta ni relativa */
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    form h2 {
+        font-size: 1.5rem;
+        position: static; /* Posición estática para asegurar que no sea absoluta ni relativa */
+        margin-bottom: 20px;
+    }
+}

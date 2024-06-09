@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura Geek</title>
+    <link rel="stylesheet" href="/styles css/style.css">
+    <link rel="stylesheet" href="/styles css/reset.css">
+    <link rel="stylesheet" href="/styles css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>&#10084;&#65039; &#128187; Alura Geek &#128187; &#10084;&#65039;</h1>
+    </header>
+    <main>
+        <section class="productos">
+            <h2 class="misProductos">MIS PRODUCTOS:</h2>
+            <div class="cards">
+                <div class="card-container--info">
+                    
+                    <ul data-lista></ul>
+                </div>
+            </div>
+        </section>
+        <section class="formulario">
+            <form data-formulario>
+                <h2>AGREGAR PRODUCTO:</h2>
+                <label for="nombreProducto">Nombre:</label>
+                <input type="text" id="nombreProducto" name="nombreProducto" required data-nombreProducto>
+                <label for="precioProducto">Precio:</label>
+                <input type="number" id="precioProducto" name="precioProducto" required data-precioProducto>
+                <label for="imagenProducto">Imagen:</label>
+                <input type="text" id="imagenProducto" name="imagenProducto" required data-imagenProducto>
+                <button type="submit" data-action="enviar">Enviar</button>
+                <button type="reset" data-action="limpiar">Limpiar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; Alura Geek Cristian Palacio</p>
+    </footer>
+    <script src="./js/conexionAPI.js" type="module"></script>
+    <script src="./js/eliminarProducto.js" type="module"></script>
+    <script src="./js/crearProducto.js" type="module"></script>
+    <script src="./js/mostrarCards.js" type="module"></script>
+</body>
+</html>
